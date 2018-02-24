@@ -33,7 +33,6 @@ package names):
 
 ```
 php sed python3 python3-nltk perl
-
 ```
 
 The WordNet data from NLTK is required. After installing python3-nltk,
@@ -42,8 +41,6 @@ run python3, and type the following commands into the interpreter:
 ```
 >>> import nltk
 >>> nltk.download()
-```
-
 ```
 
 
