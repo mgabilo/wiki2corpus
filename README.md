@@ -36,13 +36,7 @@ processed by automated natural language processing tools.
 
 * WikiMedia [[WikiPedia:Talk]] or [these types of links] replaced by quoted contents
 
-* Post-processing rules throw out sentences with garbage:
-
-** Sentences with certain non-alphanumeric characters 
-
-** Sentences with an odd-number of quotations (mismatched)
-
-** Sentences not starting with an uppercase character and terminating with punctuation
+* Post-processing rules throw out sentences with garbage: (1) Sentences with certain non-alphanumeric characters, (2) Sentences with an odd-number of quotations (mismatched), (3) Sentences not starting with an uppercase character and terminating with punctuation
 
 
 
