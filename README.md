@@ -86,15 +86,16 @@ Anarchism holds the state to be undesirable, unnecessary, and harmful.
 ```
 
 
-
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License (see the [LICENSE](LICENSE) file for details), with the following exceptions:
 
-However, the included sentence splitter is not covered under this license (the files **HONORIFICS**, **sentence-boundary.pl**, and **README.sentence-boundary**). See **README.sentence-boundary** for license details. This splitter is a modified version of the script by **Marcia Munoz** (http://cogcomp.cs.illinois.edu/software/tools/sentenceboundary.tar.gz).
+* The files HONORIFICS and sentence-boundary.pl (see [README.sentence-boundary](README.sentence-boundary) for details), which are a modified version of (a program by by Marcia Munoz)[http://cogcomp.cs.illinois.edu/software/tools/sentenceboundary.tar.gz].
+
+* The file url.re was taken from code found on blog by Mike Malone which is now [defunct](https://web.archive.org/web/20070509042353/http://immike.net/blog/2007/04/06/5-regular-expressions-every-web-programmer-should-know/)
 
 
 ## Authors
 
 * **Michael Gabilondo** - [mgabilo](https://github.com/mgabilo)
+
