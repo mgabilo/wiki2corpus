@@ -90,7 +90,7 @@ Anarchism holds the state to be undesirable, unnecessary, and harmful.
 
 This project is licensed under the MIT License (see the [LICENSE](LICENSE) file for details), with the following exceptions:
 
-* The files HONORIFICS and sentence-boundary.pl (see [README.sentence-boundary](README.sentence-boundary) for details), which are a modified version of (a program by by Marcia Munoz)[http://cogcomp.cs.illinois.edu/software/tools/sentenceboundary.tar.gz].
+* The files HONORIFICS and sentence-boundary.pl (see [README.sentence-boundary](README.sentence-boundary) for details), which are a modified version of a (program)[http://cogcomp.cs.illinois.edu/software/tools/sentenceboundary.tar.gz] by Marcia Munoz.
 
 * The file url.re was taken from code found on blog by Mike Malone which is now [defunct](https://web.archive.org/web/20070509042353/http://immike.net/blog/2007/04/06/5-regular-expressions-every-web-programmer-should-know/)
 
