@@ -9,27 +9,50 @@ available from the following URL:
 https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia
 
 The goal is to produce a large set of plain-text sentences that can be
-processed by automated natural language processing tools. The script
-does not produce a complete text-only reproduction of the articles,
-although the resulting output is mostly complete.
-
-The output is a set of labeled articles, each of which includes one
-sentence per line.
+processed by automated natural language processing tools.
 
 
-## Limitations
+## Transformations
 
-* A few sentences that were in the original article may not be outputted. For example, inadequate processing of the markup can result in something that doesn't look like a sentence, causing it to be filtered out.
+* Sentences are outputted one per line, using a pre-existing sentence boundary detector that comes packaged
+
+* Some sentences are thrown out, since emphasis is on clean data rather than 100% retrieval
+
+* Most processing of markup is done using regular expressions
 
 * The following pieces of information are not outputted in general: URLs, citations, talk pages, section labels, and lists.
 
-* This script is only tested on Ubuntu 16.04 and it won't run easily outside of a Unix-like environment.
+* Articles are labeled 
+
+* URLs are replaced by the word -URL-
+
+* The italics, bold or quotations around single words (pronouns or words in WordNet) are removed; otherwise, the italics, bold or quotations are changed into double quotes
+
+* WikiMedia [[links]] are replaced by plain text
+
+* WikiMedia [[links|substitute text]] are replaced by plain substitute text
+
+* Some HTML such &<i></i>quot; or line break tags are processed, including many &lt;ref&gt; tags, and enclosed referenced sections removed
+
+* WikiMedia [[WikiPedia:Talk]] or [these types of links] replaced by quoted contents
+
+* Post-processing rules throw out sentences with garbage:
+
+** Sentences with certain non-alphanumeric characters 
+
+** Sentences with an odd-number of quotations (mismatched)
+
+** Sentences not starting with an uppercase character and terminating with punctuation
+
+
 
 
 ## Prerequisites
 
-The following dependencies are required (these are Ubuntu 16.04
-package names):
+This script is only tested on Ubuntu 16.04 and it won't run easily
+outside of a Unix-like environment.  The following dependencies are
+required (these are Ubuntu 16.04 package names):
+
 
 ```
 php sed python3 python3-nltk perl
