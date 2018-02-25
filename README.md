@@ -89,9 +89,11 @@ Run the script as follows.
 ```
 
 This will take a while to finish. The file wiki-output.txt will
-contain the uncompressed, plain text output that looks like the
-following:
+contain uncompressed, plain text articles.
 
+Each article is labeled as "** Article: article-name", and is followed
+by the sentences in article, one per line. For example, the first bit
+of output produced by the script is the following:
 
 ```
 ** Article: Anarchism
